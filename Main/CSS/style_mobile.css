@@ -1,0 +1,76 @@
+@media only screen and (max-width: 529px) {
+  .navbar-container {
+    width: 100%;
+    height: 10%;
+    linear-gradient(var(--background-header), var(--text-primary-color), var(--text-secondary-color))
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: columns;
+    justify-content: space;
+  }
+  .grid-container {
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-template-rows: repeat(5, minmax(100px, 1fr));
+    gap: 7px;
+  }  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+  }  
+  #items-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #items-1:hover {
+    filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+    cursor: pointer;
+  }
+  #items-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #items-2:hover {
+    filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+    cursor: pointer;
+  }
+  #items-3 {
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #items-3:hover {
+    filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+    cursor: pointer;
+  }
+  #items-4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #items-4:hover {
+    filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+    cursor: pointer;
+  }
+  #items-5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+  }
+  #items-5:hover {
+    filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+    cursor: pointer;
+  }  
+}

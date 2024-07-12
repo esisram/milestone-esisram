@@ -1,0 +1,202 @@
+:root {
+  --background-body: rgb(66, 66, 219, 0.3);
+  --background-header: rgba(4, 9, 30, 0.7);
+  --text-primary-color: rgba(253, 247, 247, 0.2);
+  --text-secondary-color: rgb(221, 205, 205, 0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  overflow-y: scroll;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.6em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 5%;
+  background-image: linear-gradient(var(--background-header), var(--text-primary-color), var(--text-secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  width: 100%;
+  max-width: 1100px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.header-btn {
+  padding: 0.6em;
+  border-radius: 40%;
+}
+.header-btn:hover {
+  cursor: pointer;
+  filter: brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+}
+.header-btn::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 0.2em;
+  background-color: black;
+  transition: width 1s;
+}
+.header-btn:hover::after {
+  width: 100%;
+}
+
+
+.grid-container {
+  background: whitesmoke;
+  width: 100%;
+  height: 80%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, minmax(100px, 1fr));
+  gap: 5px;
+}
+.grid-item:hover {
+  filter: grayscale(0%);
+}
+.grid-container:hover .grid-item:not(:hover) {
+  filter: grayscale(100%);
+}
+.grid-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.text-overlay {
+  border: 2px solid white;
+  position: absolute;
+  bottom: 2%;
+  left: 4%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 30%;
+  font-size: 1.2rem;
+}
+#items-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#items-1:hover {
+  filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+  cursor: pointer;
+}
+
+#items-2 {
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#items-2:hover {
+  filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+  cursor: pointer;
+}
+
+#items-3 {
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+#items-3:hover {
+  filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+  cursor: pointer;
+}
+
+#items-4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+#items-4:hover {
+  filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+  cursor: pointer;
+}
+
+#items-5 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#items-5:hover {
+  filter: opacity(75%) saturate(100%) brightness(0.8) drop-shadow(0.6em 0.6em 1em blue);
+  cursor: pointer;
+}
+
+
+footer {
+  width: 100%;
+  height: 10%;
+  background-image: linear-gradient(var(--background-header), var(--text-primary-color), var(--text-secondary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.icon:hover {
+  transform: scale(1.4);
+}
+.facebook-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/124/124010.png'); /* URL to Facebook icon */
+}
+.linkedin-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png'); /* URL to LinkedIn icon */
+}
+.twitter-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png'); /* URL to Twitter icon */
+}
+.instagram-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png'); /* URL to Instagram icon */
+}
+.location-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/684/684908.png'); /* URL to Location icon */
+}
