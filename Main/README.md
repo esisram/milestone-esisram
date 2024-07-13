@@ -1,4 +1,6 @@
-# NihonTravel Website
+# FahimaDayCare
+
+## Project Description
 
 [Fahima DayCare](https://www.fahimadaycare.site/)
 
@@ -6,64 +8,129 @@
 <img src="../images/readme_picture/fahimadaycare_log.jpeg" alt="add relative path to image" 
 width="200" height='250'/>
 </a>
+FahimaDayCare is a responsive website designed to provide information and services related to child care. The website adapts to various screen sizes, including desktop, tablet, and mobile. The main page features a dynamic grid with interactive images and intuitive navigation.
 
-Website [**NihonTravel**](https://www.fahimadaycare.site/) adalah situs web yang menyediakan informasi tentang berbagai layanan dan produk yang terkait dengan perjalanan ke Jepang. Panduan ini menjelaskan langkah-langkah untuk membuat dan menjalankan website ini.
+## Website Link
 
-## Struktur Proyek
+You can visit the live website through the following link:
+[www.fahimadaycare.com](https://www.fahimadaycare.com)
 
-NihonTravel/
-├── index.html
+## Setup Instructions
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
+```
+
+### 2. Open Project Folder
+
+Navigate to the cloned project directory:
+
+```bash
+cd FahimaDayCare
+```
+
+### 3. File Structure
+
+Ensure your file structure looks like this:
+
+```bash
+FahimaDayCare/
 ├── CSS/
-│ └── style.css
+│   ├── style.css
+│   ├── style_tablet.css
+│   └── style_mobile.css
+├── index.html
 └── README.md
-
-## Langkah-langkah Membuat Website
-
-### 1. Persiapan
-
-Pastikan Anda memiliki struktur proyek seperti yang dijelaskan di atas. Buat folder utama bernama `NihonTravel`, di dalamnya buat folder `CSS` dan file `index.html` serta `style.css`.
-
-### 2. HTML
-
-File `index.html` berfungsi sebagai halaman utama dari website NihonTravel. Berikut adalah struktur utama dari file `index.html`:
-
-- Bagian `<head>`: Mengandung metadata, judul halaman, dan link ke stylesheet serta font dari Google Fonts.
-- Bagian `<body>`: Terdiri dari header, main content, dan footer.
-
-#### Header
-
-Header berisi navigasi dengan logo situs dan tombol "Sign In". Berikut adalah kode untuk header:
-
-```html
-<header class="navbar-container">
-  <nav class="navbar">
-    <h1 class="logo"><a href="./index.html">NihonTravel</a></h1>
-    <ul class="nav-links">
-      <li>Join now for an extra 10% Cash Back on purchases made in your first 7 days.*</li>
-    </ul>
-    <a href="#SignIn" class="header-btn">Sign In</a>
-  </nav>
-</header>
 ```
 
-Main Content
-Bagian utama berisi grid yang menampilkan berbagai kategori seperti "About Us", "Products", "Services", "Gallery", dan "Contact". Setiap item dalam grid ini adalah tautan ke halaman terkait.
+### 4. Open in Browser
 
-```<main class="grid-container">
-  <!-- Contoh item dalam grid -->
-  <div id="items-1" class="grid-item">
-    <a href="../1_about_us/index.html">
-      <img src="about_us_image_url" alt="About Us" />
-    </a>
-    <p class="text-overlay">About Us</p>
-  </div>
-  <!-- Item lainnya mengikuti struktur yang sama -->
-</main>
+Open the index.html file in your browser to see the result. You can do this in two ways:
+
+Method 1: Double Click
+Double-click the index.html file to open it in your default browser.
+
+Method 2: Using Live Server (Visual Studio Code)
+If you are using Visual Studio Code, you can install the Live Server extension and run the project with the following steps:
+
+Install the Live Server extension from the Marketplace.
+Open the project in Visual Studio Code.
+Right-click the index.html file and select "Open with Live Server".
+
+#### Development Stages
+
+Home Dekstop:<br>
+<img src="../images/readme_picture/home.png" alt="add relative path to image" 
+width="550" height='250'/>
+
+Home Tablet:<br>
+<img src="../images/readme_picture/home_tablet.png" alt="add relative path to image" 
+width="350" height='250'/>
+
+Home Mobile:<br>
+<img src="../images/readme_picture/home_mobile.png" alt="add relative path to image" 
+width="150" height='250'/>
+
+Hover Dekstop:<br>
+<img src="../images/readme_picture/hover.png" alt="add relative path to image" 
+width="5500" height='250'/>
+</a>
+
+Other Website Travel:<br>
+<a href="https://www.fahimadaycare.site/" target="_blank">
+<img src="../images/readme_picture/hover_travel.png" alt="add relative path to image" 
+width="550" height='250'/>
+</a>
+
+## Dependencies and External Libraries
+
+- Google Fonts: The project uses the Poppins font from Google Fonts. The font is included in the HTML head section.
+
+```bash
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
 ```
 
-Footer
-Footer tidak memiliki konten spesifik dan dapat diperluas sesuai kebutuhan
-`<footer></footer>`
+- Icons: Social media icons are sourced from external URLs.
+
+## Design Choices and Considerations
+
+Responsive Design
+The project uses media queries to ensure the layout adapts to different screen sizes:
+
+- Desktop: Styles in CSS/style.css.
+- Tablet: Styles in CSS/style_tablet.css.
+- Mobile: Styles in CSS/style_mobile.css.
+
+## Grid Layout
+
+A CSS grid layout is used for the gallery section to provide a flexible and responsive design. Hover effects are implemented to enhance user interaction.
+
+## Visual Effects
+
+Visual effects such as hover states, transitions, and filters are used to create an engaging user experience. These effects are implemented in the CSS to ensure smooth performance across different devices.
+
+## Color Scheme
+
+A consistent color scheme is applied using CSS variables. This helps maintain a cohesive look and feel throughout the website.
+
+```bash
+:root {
+  --background-body: rgb(66, 66, 219, 0.3);
+  --background-header: rgba(4, 9, 30, 0.7);
+  --text-primary-color: rgba(253, 247, 247, 0.2);
+  --text-secondary-color: rgb(221, 205, 205, 0.2);
+}
+```
+
+Contact
+If you have any questions or need further assistance, please contact us at [esis.ramadhan@gmail.com].
 
 # tutorial custom domain :
 
